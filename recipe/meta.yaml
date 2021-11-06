@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - python >=3.6
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - schwimmbad
 
 test:
