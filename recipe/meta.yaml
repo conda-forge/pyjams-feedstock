@@ -1,5 +1,5 @@
 {% set name = "pyjams" %}
-{% set version = "1.16" %}
+{% set version = "1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyjams-{{ version }}.tar.gz
-  sha256: 870b1b4f2394e15b01b821f30d4ac916184f69af21f81fa1ad0fe7d12292b539
+  sha256: c583ec1c4a768defb40e22b1f5c8521231ee7687e16c9c2aa7fff875e7b18bb2
 
 build:
   noarch: python
@@ -26,6 +26,8 @@ requirements:
     - scipy
     - matplotlib-base
     - schwimmbad
+    - xlrd
+    - openpyxl
 
 test:
   imports:
