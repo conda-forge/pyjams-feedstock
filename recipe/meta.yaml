@@ -1,5 +1,6 @@
 {% set name = "pyjams" %}
-{% set version = "1.23" %}
+{% set version = "1.24" %}
+{% set sha256 = "b538de0b8d19c6e0c752c7aaa8da8273ea4853874fd5d969e6f8f4f2d88d02b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyjams-{{ version }}.tar.gz
-  sha256: b8cc46a356ec65b5e052ec76b14991ef4e6c96f6aa04ccdb1cb7303a20bb601f
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
