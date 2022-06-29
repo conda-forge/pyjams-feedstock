@@ -1,6 +1,6 @@
 {% set name = "pyjams" %}
-{% set version = "1.24" %}
-{% set sha256 = "b538de0b8d19c6e0c752c7aaa8da8273ea4853874fd5d969e6f8f4f2d88d02b1" %}
+{% set version = "1.25" %}
+{% set sha256 = "5e50948f9e9a131a96fbd7ed90d1ae044d7c45e6e084a89320d0bbb2902b8f61" %}
 
 package:
   name: {{ name|lower }}
@@ -52,7 +52,7 @@ about:
     routines, or calculating Elementary Effects. It has several subpackages
     offering constants or special functions, or objective functions to be
     used with scipy.optimize or similar.
-  doc_url: https://pyjams.readthedocs.io/
+  doc_url: https://mcuntz.github.io/pyjams
   dev_url: https://github.com/mcuntz/pyjams
 
 extra:
