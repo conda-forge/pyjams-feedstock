@@ -11,7 +11,7 @@ Summary: General Python package with miscellaneous utility functions used in sev
 
 Development: https://github.com/mcuntz/pyjams
 
-Documentation: https://pyjams.readthedocs.io/
+Documentation: https://mcuntz.github.io/pyjams/
 
 pyjams is a general Python package offering miscellaneous functions in
 different categories, such as reading different file formats, Julian date
