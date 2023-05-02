@@ -1,6 +1,6 @@
 {% set name = "pyjams" %}
-{% set version = "1.29" %}
-{% set sha256 = "b0a609f3b3a571aaff0b365621088074dda33ddf98a0b9ca3d210881cf4f9ef3" %}
+{% set version = "1.30" %}
+{% set sha256 = "493e511990bc314688504c266ad7d217716e5cf3872b4b05e5bdf750910eb05a" %}
 
 package:
   name: {{ name|lower }}
