@@ -1,6 +1,6 @@
 {% set name = "pyjams" %}
-{% set version = "1.30" %}
-{% set sha256 = "493e511990bc314688504c266ad7d217716e5cf3872b4b05e5bdf750910eb05a" %}
+{% set version = "1.32" %}
+{% set sha256 = "f66b2f8514cea9c2569678bd5ae6cefdaab66b457b6010be449227725706c7af" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=42
     - setuptools_scm >=3.5
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
     - scipy
     - matplotlib-base
