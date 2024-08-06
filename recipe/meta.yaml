@@ -1,5 +1,6 @@
 {% set name = "pyjams" %}
-{% set version = "1.17" %}
+{% set version = "2.2" %}
+{% set sha256 = "ea97fbf5313decf123ca0afd62953c181768836d496c5c9bf1c06c020d08906f" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyjams-{{ version }}.tar.gz
-  sha256: c583ec1c4a768defb40e22b1f5c8521231ee7687e16c9c2aa7fff875e7b18bb2
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -16,16 +17,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=42
     - setuptools_scm >=3.5
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
     - scipy
     - matplotlib-base
+    - pandas
     - schwimmbad
+    - cftime
+    - netcdf4
     - xlrd
     - openpyxl
 
@@ -39,17 +43,17 @@ test:
 
 about:
   home: https://github.com/mcuntz/pyjams
-  summary: 'General Python package with miscellaneous utility functions used in several other packages.'
+  summary: 'General Python package with a wide variety of miscellaneous utility functions.'
   dev_url: https://github.com/mcuntz/pyjams
   license: MIT
   license_file: LICENSE
   description: |
-    pyjams is a general Python package offering miscellaneous functions in
-    different categories, such as reading different file formats, Julian date
-    routines, or calculating Elementary Effects. It has several subpackages
-    offering constants or special functions, or objective functions to be
-    used with scipy.optimize or similar.
-  doc_url: https://pyjams.readthedocs.io/
+    pyjams is a general Python package offering a wide variety of miscellaneous
+    functions in different categories, such as reading different file formats,
+    date conversion routines, or calculating Elementary Effects. It has several
+    subpackages offering constants, special functions, or objective functions
+    to be used with scipy.optimize or similar.
+  doc_url: https://mcuntz.github.io/pyjams
   dev_url: https://github.com/mcuntz/pyjams
 
 extra:
